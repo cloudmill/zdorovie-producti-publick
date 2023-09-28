@@ -5,15 +5,14 @@
 		<meta charset="utf-8">
 		<title>test-html</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="styles.css" rel="stylesheet">
+		<link href="40.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
 	<body class="body">
 		<div class="wrapper">
-			<header class="header">
+			<header class="header" id="header">
 				<div class="header-wrapper">
 					<div class="header-row">
 						<div class="header-col left">
@@ -65,17 +64,21 @@
 							<div class="header-col__subrow">
 								<nav class="header-nav"><a class="header-nav__item" href="#">Партнерам</a><a class="header-nav__item" href="#"> Где купить</a><a class="header-nav__item" href="#"> Контакты</a></nav>
 								<div class="header-contacts">
-									<div class="header-contacts__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+									<div class="header-contacts__item btn-hover_parent">
+										<div class="btn-hover_circle white header_link"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M12.9901 2.75C13.8509 2.75 14.2319 2.75076 14.5461 2.77889C18.0394 3.09165 20.808 5.86017 21.1207 9.35348C21.1489 9.66768 21.1496 10.0487 21.1496 10.9095V11.8995C21.1496 12.3137 21.4854 12.6495 21.8996 12.6495C22.3138 12.6495 22.6496 12.3137 22.6496 11.8995V10.8591C22.6496 10.0622 22.6496 9.60934 22.6147 9.21971C22.2373 5.00365 18.896 1.66234 14.6799 1.28486C14.2902 1.24998 13.8374 1.24999 13.0404 1.25H12.0001C11.5859 1.25 11.2501 1.58579 11.2501 2C11.2501 2.41422 11.5859 2.75 12.0001 2.75L12.9901 2.75Z" fill="#0068FF"></path>
 											<path d="M7.11183 4.0253C6.05974 3.05857 4.44259 3.05857 3.3905 4.0253C3.34742 4.06489 3.30142 4.11089 3.2417 4.17063L2.34419 5.06813C1.44108 5.97125 1.06196 7.27317 1.33902 8.51995C2.91099 15.5938 8.43553 21.1183 15.5094 22.6903C16.7562 22.9674 18.0581 22.5883 18.9612 21.6851L19.8586 20.7877C19.9184 20.728 19.9644 20.6819 20.004 20.6388C20.9708 19.5867 20.9708 17.9696 20.004 16.9175C19.9644 16.8744 19.9184 16.8284 19.8586 16.7686L18.3894 15.2993C17.3693 14.2792 15.8287 13.9875 14.5063 14.564C13.7492 14.894 12.8672 14.7269 12.2832 14.1429L9.88639 11.7461C9.30239 11.1621 9.13536 10.2802 9.46538 9.52308C10.0418 8.20062 9.75009 6.66009 8.72999 5.63999L7.26066 4.17065C7.20092 4.1109 7.15492 4.06489 7.11183 4.0253Z" fill="#0068FF"></path>
 											<path d="M12.7071 4.78554C12.2929 4.78554 11.9571 5.12132 11.9571 5.53553C11.9571 5.94975 12.2929 6.28553 12.7071 6.28553H13.2728C13.36 6.28553 13.3957 6.28555 13.4248 6.28597C15.7244 6.3189 17.5806 8.1751 17.6135 10.4747C17.6139 10.5037 17.614 10.5395 17.614 10.6267V11.1924C17.614 11.6066 17.9497 11.9424 18.364 11.9424C18.7782 11.9424 19.114 11.6066 19.114 11.1924V10.6194C19.114 10.5417 19.114 10.4944 19.1134 10.4532C19.0688 7.342 16.5575 4.83068 13.4463 4.78612C13.405 4.78553 13.3577 4.78553 13.28 4.78554H12.7071Z" fill="#0068FF"></path>
-										</svg></div>
-									<div class="header-contacts__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+										</svg>
+									</div>
+									<div class="header-contacts__item btn-hover_parent">
+										<div class="btn-hover_circle white header_link"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M1 15.25C0.585786 15.25 0.25 15.5858 0.25 16C0.25 16.4142 0.585786 16.75 1 16.75H4C4.41421 16.75 4.75 16.4142 4.75 16C4.75 15.5858 4.41421 15.25 4 15.25H1Z" fill="#0068FF"></path>
 											<path d="M1 18.25C0.585786 18.25 0.25 18.5858 0.25 19C0.25 19.4142 0.585786 19.75 1 19.75H7C7.41421 19.75 7.75 19.4142 7.75 19C7.75 18.5858 7.41421 18.25 7 18.25H1Z" fill="#0068FF"></path>
 											<path d="M3.10885 5.09007L3 5C3.3084 4.57553 3.6366 4.26331 4.06107 3.95491C5.3754 3 7.25027 3 11 3H13C16.7497 3 18.6246 3 19.9389 3.95491C20.3634 4.26331 20.6657 4.54132 20.9741 4.96579L20.8485 5.0907L18.5406 7.39861C16.8589 9.08027 15.6499 10.287 14.6071 11.0827C13.5816 11.8651 12.8055 12.1789 11.9999 12.1789C11.1942 12.1789 10.4181 11.8651 9.39261 11.0827C8.3498 10.287 7.14079 9.08027 5.45913 7.39861L3.51587 5.45535L3.10885 5.09007Z" fill="#0068FF"></path>
 											<path d="M2 12C2 9.36008 2 7.64946 2.33322 6.40947L2.48385 6.54466L4.43904 8.49984C6.07131 10.1321 7.35049 11.4113 8.48274 12.2752C9.64167 13.1594 10.7344 13.6789 11.9999 13.6789C13.2653 13.6789 14.3581 13.1594 15.517 12.2752C16.6492 11.4113 17.9284 10.1321 19.5607 8.49986L21.6634 6.39709C22 7.63806 22 9.35129 22 12C22 15.7497 22 17.6246 21.0451 18.9389C20.7367 19.3634 20.3634 19.7367 19.9389 20.0451C18.6246 21 16.7497 21 13 21H11C9.57164 21 8.41532 21 7.45841 20.9472C8.34204 20.74 9 19.9468 9 19C9 17.8954 8.10457 17 7 17H5.73244C5.90261 16.7058 6 16.3643 6 16C6 14.8954 5.10457 14 4 14H2.00721C2 13.3989 2 12.7355 2 12Z" fill="#0068FF"></path>
-										</svg></div>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -83,7 +86,7 @@
 				</div>
 			</header>
 			<main class="main">
-				<section class="top-section">
+				<section class="top-section" data-aos="fade-up">
 					<div class="main-slider container">
 						<div class="main-slider__wrapper">
 							<div class="swiper main-swiper">
@@ -187,15 +190,19 @@
 									</div>
 								</div>
 								<div class="main-slider__buttons">
-									<div class="main-slider__buttons-btn main-slider__button-left">
-										<div class="white-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+									<div class="slider-btn btn-hover_parent main-slider__button-left">
+										<div class="white-circle">
+											<div class="btn-hover_circle total-white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 												<path d="M16 10.8698L16 8.75515C16 6.47309 13.3808 5.18399 11.5725 6.57603L7.85123 9.44068C6.42121 10.5415 6.42121 12.6981 7.85124 13.7989L11.5725 16.6636C13.3808 18.0556 16 16.7665 16 14.4844L16 12.3698L16 10.8698Z" fill="#4F627D"></path>
-											</svg></div>
+											</svg>
+										</div>
 									</div>
-									<div class="main-slider__buttons-btn main-slider__button-right">
-										<div class="white-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+									<div class="slider-btn btn-hover_parent main-slider__button-right">
+										<div class="white-circle right">
+											<div class="btn-hover_circle total-white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 												<path d="M16 10.8698L16 8.75515C16 6.47309 13.3808 5.18399 11.5725 6.57603L7.85123 9.44068C6.42121 10.5415 6.42121 12.6981 7.85124 13.7989L11.5725 16.6636C13.3808 18.0556 16 16.7665 16 14.4844L16 12.3698L16 10.8698Z" fill="#4F627D"></path>
-											</svg></div>
+											</svg>
+										</div>
 									</div>
 								</div>
 								<div class="main-slider__pagination"></div>
@@ -203,8 +210,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="main-catalog container">
-					<div class="main-catalog__top">
+				<section class="main-catalog container" data-aos="fade-up">
+					<div class="main-catalog__top" data-aos="fade-up">
 						<h2 class="main-catalog__title">каталог<br>продукции</h2>
 						<div class="title-rombs">
 							<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -221,7 +228,7 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="main-catalog__list"><a class="main-catalog__item btn-hover_parent" href="#">
+					<div class="main-catalog__list" data-aos="fade-up"><a class="main-catalog__item btn-hover_parent" href="#">
 							<div class="main-catalog__item-bg">
 								<picture class="picture">
 									<source type="image/webp" srcset="assets/images/main-catalog-item-bg1.webp"><img class="picture__img" src="assets/images/main-catalog-item-bg1.png">
@@ -265,7 +272,7 @@
 							</div>
 						</a></div>
 				</section>
-				<section class="main-traditions container-fluid">
+				<section class="main-traditions container-fluid" data-aos="fade-up">
 					<div class="main-traditions__bg"><svg width="1920" height="1390" viewbox="0 0 1920 1390" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_112_14072)">
 								<path d="M852.866 1631.13C893.576 1133.75 1140.32 88.0227 2485.18 0.229725C2579.7 -5.78834 2629.96 107.847 2562.7 175.108L1027.74 1710.42C959.773 1778.75 845.078 1726.35 852.866 1631.13Z" fill="#EAF3FF"></path>
@@ -277,7 +284,7 @@
 								</clippath>
 							</defs>
 						</svg></div>
-					<div class="container">
+					<div class="container" data-aos="fade-up">
 						<div class="main-traditions__logo"><svg xmlns="http://www.w3.org/2000/svg" width="143" height="75" viewbox="0 0 143 75" fill="none">
 								<path d="M0 11.3017L4.19833 10.6986C4.26064 11.2899 4.4943 11.7599 4.89154 12.1084C5.28879 12.4569 5.81844 12.6331 6.46883 12.6331C6.99459 12.6331 7.43468 12.4961 7.79298 12.222C8.15128 11.9478 8.33043 11.5876 8.33043 11.1411C8.33043 10.6947 8.12401 10.3383 7.71509 10.0642C7.30616 9.7901 6.78429 9.65305 6.15337 9.65305H5.207V6.28916H6.15337C7.37236 6.28916 7.98381 5.80358 7.98381 4.82848C7.98381 4.44863 7.83193 4.14319 7.52426 3.90822C7.22048 3.67718 6.81545 3.55969 6.30916 3.55969C5.84571 3.55969 5.4368 3.69675 5.0785 3.97087C4.7202 4.24499 4.49821 4.62484 4.41642 5.11435L0.630914 4.06485C1.00868 2.79605 1.68635 1.80138 2.66778 1.08083C3.64531 0.360279 4.90324 0 6.43769 0C8.1435 0 9.51047 0.379873 10.5386 1.1435C11.5707 1.90321 12.0848 2.89005 12.0848 4.09619C12.0848 5.61952 11.4227 6.81393 10.0946 7.68329C10.9164 8.02007 11.5824 8.51741 12.1003 9.1753C12.6144 9.82928 12.8754 10.5929 12.8754 11.4583C12.8754 13.0678 12.2912 14.3092 11.1228 15.1864C9.95445 16.0636 8.40442 16.5022 6.46883 16.5022C4.59555 16.5022 3.08836 16.0245 1.93947 15.0729C0.790584 14.1252 0.144098 12.8681 0 11.3017Z" fill="#F64653"></path>
 								<path d="M13.7749 19.8703V12.0656H15.5742C16.1194 11.2002 16.4777 9.97055 16.6491 8.38456L17.4085 0.262695H30.4747V12.0656H32.6829V19.8703H28.3911V16.2519H18.0706V19.8703H13.7749ZM20.0256 12.0656H25.4235V4.44894H21.3537L20.8785 9.0816C20.7072 10.4131 20.4229 11.4077 20.0256 12.0656Z" fill="#F64653"></path>
@@ -349,8 +356,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="main-filials container">
-					<div class="main-filials__landscape">
+				<section class="main-filials container" data-aos="fade-up">
+					<div class="main-filials__landscape" data-aos="fade-up">
 						<div class="main-filials__landscape-bg">
 							<picture class="picture">
 								<source type="image/webp" srcset="assets/images/main-filials-bg.webp"><img class="picture__img" src="assets/images/main-filials-bg.png">
@@ -381,7 +388,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="main-filials__bottom"><a class="main-filials__card where-buy btn-hover_parent" href="#">
+					<div class="main-filials__bottom" data-aos="fade-up"><a class="main-filials__card where-buy btn-hover_parent" href="#">
 							<div class="main-filials__card-top">
 								<div class="main-filials__card-title">где купить</div>
 								<div class="main-filials__card-text">Локальные, федеральные сети и&nbsp;маркетплейсы</div>
@@ -426,7 +433,7 @@
 							</div>
 						</a></div>
 				</section>
-				<section class="main-news">
+				<section class="main-news" data-aos="fade-up">
 					<div class="container">
 						<div class="main-news__top">
 							<div class="main-news__title">новости и акции</div>
@@ -492,15 +499,19 @@
 								</div>
 							</div>
 							<div class="main-news__buttons">
-								<div class="main-news__button main-news__button_left">
-									<div class="white-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+								<div class="slider-btn btn-hover_parent main-news__button_left">
+									<div class="white-circle">
+										<div class="btn-hover_circle total-white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M16 10.8698L16 8.75515C16 6.47309 13.3808 5.18399 11.5725 6.57603L7.85123 9.44068C6.42121 10.5415 6.42121 12.6981 7.85124 13.7989L11.5725 16.6636C13.3808 18.0556 16 16.7665 16 14.4844L16 12.3698L16 10.8698Z" fill="#4F627D"></path>
-										</svg></div>
+										</svg>
+									</div>
 								</div>
-								<div class="main-news__button main-news__button_right">
-									<div class="white-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+								<div class="slider-btn btn-hover_parent main-news__button_right">
+									<div class="white-circle right">
+										<div class="btn-hover_circle total-white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M16 10.8698L16 8.75515C16 6.47309 13.3808 5.18399 11.5725 6.57603L7.85123 9.44068C6.42121 10.5415 6.42121 12.6981 7.85124 13.7989L11.5725 16.6636C13.3808 18.0556 16 16.7665 16 14.4844L16 12.3698L16 10.8698Z" fill="#4F627D"></path>
-										</svg></div>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -509,8 +520,9 @@
 							</a></div>
 					</div>
 				</section>
+				<div class="overlay"></div>
 			</main>
-			<footer class="footer">
+			<footer class="footer" data-aos="fade-up">
 				<div class="footer-wrapper">
 					<div class="footer__ornament"><svg xmlns="http://www.w3.org/2000/svg" width="1840" height="115" viewbox="0 0 1840 115" fill="none">
 							<path d="M3.88887 53.9136C21.3354 55.354 58.0166 63.9966 61.0961 111.171C61.3072 114.486 57.3087 116.249 54.9618 113.89L1.10737 60.0478C-1.27678 57.6637 0.548576 53.6404 3.88887 53.9136Z" fill="#2980FF"></path>
