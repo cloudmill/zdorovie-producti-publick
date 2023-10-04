@@ -17,7 +17,7 @@
 					<div class="header-row">
 						<div class="header-col left">
 							<div class="header-buttons">
-								<div class="header-buttons__menu btn-hover_parent">
+								<div class="header-buttons__menu btn-hover_parent" data-header-burger data-overlay-on>
 									<div class="btn-hover_circle white"></div>
 									<div class="header-buttons__menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M5 18H8M5 6H19M5 12H11" stroke="#0068FF" stroke-width="2" stroke-linecap="round"></path>
@@ -113,6 +113,14 @@
 					</div>
 				</div>
 				<div class="about-production__popup about-production__popup_icecream" data-popup-wrapper="cookies" data-overlay-on>
+					<div class="about-production__popup-btn" data-popup-close="cookies">
+						<div class="btn-hover_parent">
+							<div class="btn-hover_circle white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+								<path d="M6.69678 6.69671L17.3034 17.3033" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
+					</div>
 					<div class="about-production__popup-img">
 						<picture class="picture">
 							<source type="image/webp" srcset="assets/images/about-production-popup-cookies.webp"><img class="picture__img" src="assets/images/about-production-popup-cookies.png">
@@ -172,7 +180,8 @@
 										<div class="breadcrumbs__arrow"><svg width="9" height="14" viewbox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M0.501732 0.71693C0.688798 2.76241 1.82258 7.06302 8.00226 7.42407C8.43495 7.44882 8.66756 6.9815 8.3585 6.70488L1.3053 0.390819C0.992979 0.109838 0.465946 0.325304 0.501732 0.71693Z" fill="#F64653"></path>
 												<path d="M0.501732 13.2839C0.688798 11.2384 1.82258 6.9378 8.00226 6.57675C8.43495 6.552 8.66756 7.01934 8.3585 7.29595L1.3053 13.61C0.992979 13.8895 0.465946 13.6755 0.501732 13.2839Z" fill="#F64653"></path>
-											</svg></div><a class="breadcrumbs__item active" href="#">о компании</a>
+											</svg></div>
+										<div class="breadcrumbs__current active">о компании</div>
 									</div>
 								</div>
 							</div>
@@ -811,7 +820,7 @@
 				</section>
 				<div class="overlay"></div>
 			</main>
-			<footer class="footer" data-aos="fade-up">
+			<footer class="footer">
 				<div class="footer-wrapper">
 					<div class="footer__ornament"><svg xmlns="http://www.w3.org/2000/svg" width="1840" height="115" viewbox="0 0 1840 115" fill="none">
 							<path d="M3.88887 53.9136C21.3354 55.354 58.0166 63.9966 61.0961 111.171C61.3072 114.486 57.3087 116.249 54.9618 113.89L1.10737 60.0478C-1.27678 57.6637 0.548576 53.6404 3.88887 53.9136Z" fill="#2980FF"></path>
