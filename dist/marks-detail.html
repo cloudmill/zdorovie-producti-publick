@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="831.css" rel="stylesheet">
+		<link href="733.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -18,7 +18,7 @@
 					<div class="header-row">
 						<div class="header-col left">
 							<div class="header-buttons">
-								<div class="header-buttons__menu btn-hover_parent" data-header-burger data-overlay-on>
+								<div class="header-buttons__menu btn-hover_parent" data-header-burger data-overlay-on data-header-btn="menu">
 									<div class="btn-hover_circle white"></div>
 									<div class="header-buttons__menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M5 18H8M5 6H19M5 12H11" stroke="#0068FF" stroke-width="2" stroke-linecap="round"></path>
@@ -29,7 +29,7 @@
 											<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg></div>
 								</div>
-								<div class="header-buttons__catalog btn-hover_parent" data-header-production data-overlay-on>
+								<div class="header-buttons__catalog btn-hover_parent" data-header-production data-overlay-on data-header-btn="production">
 									<div class="btn-hover_circle"></div>
 									<div class="header-buttons__catalog-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 											<path d="M4 7C4 6.06812 4 5.60218 4.15224 5.23463C4.35523 4.74458 4.74458 4.35523 5.23463 4.15224C5.60218 4 6.06812 4 7 4C7.93188 4 8.39782 4 8.76537 4.15224C9.25542 4.35523 9.64477 4.74458 9.84776 5.23463C10 5.60218 10 6.06812 10 7C10 7.93188 10 8.39782 9.84776 8.76537C9.64477 9.25542 9.25542 9.64477 8.76537 9.84776C8.39782 10 7.93188 10 7 10C6.06812 10 5.60218 10 5.23463 9.84776C4.74458 9.64477 4.35523 9.25542 4.15224 8.76537C4 8.39782 4 7.93188 4 7Z" fill="white"></path>
@@ -43,9 +43,14 @@
 											<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg></div>
 								</div>
-								<div class="header-buttons__search" data-header-search data-overlay-on><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+								<div class="header-buttons__search" data-header-search data-overlay-on data-header-btn="search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 										<path d="M19.7072 17.293C19.3167 16.9025 18.6835 16.9025 18.293 17.293C17.9024 17.6835 17.9024 18.3167 18.293 18.7072L19.7072 17.293ZM22.2928 22.7071C22.6834 23.0977 23.3165 23.0977 23.7071 22.7072C24.0976 22.3166 24.0976 21.6835 23.7071 21.2929L22.2928 22.7071ZM18.293 18.7072L22.2928 22.7071L23.7071 21.2929L19.7072 17.293L18.293 18.7072ZM11 18C6.58172 18 3 14.4183 3 10H1C1 15.5228 5.47715 20 11 20V18ZM19 10C19 14.4183 15.4183 18 11 18V20C16.5228 20 21 15.5228 21 10H19ZM11 2C15.4183 2 19 5.58172 19 10H21C21 4.47715 16.5228 0 11 0V2ZM11 0C5.47715 0 1 4.47715 1 10H3C3 5.58172 6.58172 2 11 2V0Z" fill="#0068FF"></path>
-									</svg></div>
+									</svg>
+									<div class="header-buttons__icon-absolut"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+											<path d="M6.69678 6.69671L17.3034 17.3033" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
 							</div>
 						</div>
 						<div class="header-col mid"><a class="header-logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="143" height="138" viewbox="0 0 143 138" fill="none">
@@ -95,7 +100,7 @@
 				</div>
 			</header>
 			<main class="main">
-				<div class="header-main" data-header-menu data-overlay-on>
+				<div class="header-main" data-header-menu data-overlay-on data-header-component="menu">
 					<div class="header-main__wrapper desktop">
 						<div class="header-main__inner">
 							<div class="header-main__svg"><svg xmlns="http://www.w3.org/2000/svg" width="1840" height="54" viewbox="0 0 1840 54" fill="none">
@@ -240,7 +245,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header-production" data-overlay-on>
+				<div class="header-production" data-overlay-on data-header-component="production">
 					<div class="header-production__inner">
 						<div class="header-production__inner-top mobile">
 							<div class="header-production__inner-back" data-production-close><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -431,7 +436,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header-search" data-overlay-on>
+				<div class="header-search" data-overlay-on data-header-component="search">
 					<div class="header-search__inner">
 						<div class="header-search__input">
 							<div class="input-wrapper" data-input-parent="">
@@ -673,7 +678,7 @@
 				</section>
 				<div class="overlay"></div>
 			</main>
-			<footer class="footer" data-aos="fade-up">
+			<footer class="footer" data-aos="fade-up" data-aos-duration="1500">
 				<div class="footer-wrapper desktop">
 					<div class="footer__ornament"><svg xmlns="http://www.w3.org/2000/svg" width="1840" height="115" viewbox="0 0 1840 115" fill="none">
 							<path d="M3.88887 53.9136C21.3354 55.354 58.0166 63.9966 61.0961 111.171C61.3072 114.486 57.3087 116.249 54.9618 113.89L1.10737 60.0478C-1.27678 57.6637 0.548576 53.6404 3.88887 53.9136Z" fill="#2980FF"></path>
@@ -768,13 +773,28 @@
 							<div class="footer-content__col right">
 								<div class="footer-content__subcol">
 									<div class="footer-content__subcol-top">
-										<nav class="footer-content__nav"><a class="footer-content__nav-item" href="#">О компании</a><a class="footer-content__nav-item" href="#">Работа у нас</a><a class="footer-content__nav-item" href="#">Новости и акции</a><a class="footer-content__nav-item" href="#">Торговые марки</a><a class="footer-content__nav-item" href="#">Партнерам</a></nav>
+										<nav class="footer-content__nav">
+											<ul class="footer-content__nav-list">
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">О компании</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Работа у нас</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Новости и акции</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Торговые марки</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Партнерам</a></li>
+											</ul>
+										</nav>
 									</div>
 									<div class="footer-content__subcol-bot"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
 								</div>
 								<div class="footer-content__subcol">
 									<div class="footer-content__subcol-top">
-										<nav class="footer-content__nav"><a class="footer-content__nav-item" href="#">Рецепты</a><a class="footer-content__nav-item" href="#">Где купить</a><a class="footer-content__nav-item" href="#">Новости и акции</a><a class="footer-content__nav-item" href="#">Контакты</a><a class="footer-content__nav-item" href="#">Видео</a></nav>
+										<nav class="footer-content__nav">
+											<ul class="footer-content__nav-list">
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Рецепты</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Где купить</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Контакты</a></li>
+												<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Видео</a></li>
+											</ul>
+										</nav>
 									</div>
 								</div>
 								<div class="footer-content__subcol">
@@ -890,12 +910,27 @@
 						<div class="footer-content__row mid">
 							<div class="footer-content__subcol left">
 								<div class="footer-content__subcol-top">
-									<nav class="footer-content__nav"><a class="footer-content__nav-item" href="#">О компании</a><a class="footer-content__nav-item" href="#">Работа у нас</a><a class="footer-content__nav-item" href="#">Новости и акции</a><a class="footer-content__nav-item" href="#">Торговые марки</a><a class="footer-content__nav-item" href="#">Партнерам</a></nav>
+									<nav class="footer-content__nav">
+										<ul class="footer-content__nav-list">
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">О компании</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Работа у нас</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Новости и акции</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Торговые марки</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Партнерам</a></li>
+										</ul>
+									</nav>
 								</div>
 							</div>
 							<div class="footer-content__subcol">
 								<div class="footer-content__subcol-top">
-									<nav class="footer-content__nav"><a class="footer-content__nav-item" href="#">Рецепты</a><a class="footer-content__nav-item" href="#">Где купить</a><a class="footer-content__nav-item" href="#">Новости и акции</a><a class="footer-content__nav-item" href="#">Контакты</a><a class="footer-content__nav-item" href="#">Видео</a></nav>
+									<nav class="footer-content__nav">
+										<ul class="footer-content__nav-list">
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Рецепты</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Где купить</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Контакты</a></li>
+											<li class="footer-nav__list-item"><a class="footer-content__nav-item" href="#">Видео</a></li>
+										</ul>
+									</nav>
 								</div>
 							</div>
 						</div>
