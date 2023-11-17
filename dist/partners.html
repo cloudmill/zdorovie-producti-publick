@@ -406,7 +406,7 @@
 							<div class="popup-vacancies__title">Написать нам</div>
 							<form class="popup-vacancies__form" action="" data-form="mail-corp">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 								</div>
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -414,10 +414,10 @@
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">E-mail</div><input class="input" data-input="" required type="email" placeholder="E-mail">
 								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+								<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+									<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 								</div>
-								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp">
+								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp" data-btn-inputs>
 									<div class="btn-hover_circle"></div><span>Отправить</span>
 								</button>
 							</form>
@@ -581,7 +581,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="partners-slider container" data-aos="fade-up">
+				<section class="partners-slider container section-animation" data-aos="fade-up">
 					<div class="about-support__content partners-slider__content">
 						<div class="about-support__rect">
 							<div class="about-support__rect-bg">
@@ -589,14 +589,16 @@
 									<source type="image/webp" srcset="assets/images/about-rect-bg-blue.webp"><img class="picture__img" src="assets/images/about-rect-bg-blue.png">
 								</picture>
 							</div>
-							<div class="about-support__rect-title">для наших постоянных клиентов мы оказываем рекламную и маркетинговую поддержку и предоставляем брендированное торговое оборудование</div>
-							<div class="about-support__rect-btn about-support__btn btn-hover_parent" data-popup="tech-char">
-								<div class="btn-hover_circle white"></div>
-								<div class="about-support__btn-text">Технические характеристики оборудования</div>
-								<div class="about-support__btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30" fill="none">
-										<path d="M22.5 15H7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M15 22.5V7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg></div>
+							<div class="about-support__rect-box">
+								<div class="about-support__rect-title">для наших постоянных клиентов мы оказываем рекламную и маркетинговую поддержку и предоставляем брендированное торговое оборудование</div>
+								<div class="about-support__rect-btn about-support__btn btn-hover_parent" data-popup="tech-char">
+									<div class="btn-hover_circle white"></div>
+									<div class="about-support__btn-text">Технические характеристики оборудования</div>
+									<div class="about-support__btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30" fill="none">
+											<path d="M22.5 15H7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M15 22.5V7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
 							</div>
 						</div>
 						<div class="about-support__slider">
@@ -695,7 +697,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="main-catalog container partners-catalog" data-aos="fade-up">
+				<section class="main-catalog container partners-catalog section-animation" data-aos="fade-up">
 					<div class="main-catalog__top" data-aos="fade-up">
 						<h2 class="main-catalog__title partners-catalog__title animation-title" data-splitting data-effect1><span>наша </span><span>продукция</span></h2>
 						<div class="title-rombs">
@@ -772,9 +774,9 @@
 							</div>
 						</a></div>
 				</section>
-				<section class="partners-mails" data-aos="fade-up">
+				<section class="partners-mails section-animation" data-aos="fade-up">
 					<div class="container">
-						<div class="partners-mails__top">
+						<div class="partners-mails__top" data-aos="fade-up">
 							<h2 class="partners-mails__title animation-title" data-splitting data-effect1><span>благодарственные </span><span>письма</span></h2>
 							<div class="title-rombs">
 								<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -792,7 +794,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="partners-mails__slider">
+					<div class="partners-mails__slider" data-aos="fade-up">
 						<div class="swiper partners-mails-swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
@@ -862,8 +864,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="partners-contacts container" data-aos="fade-up">
-					<div class="partners-contacts__top">
+				<section class="partners-contacts container section-animation" data-aos="fade-up">
+					<div class="partners-contacts__top" data-aos="fade-up">
 						<h2 class="partners-contacts__title animation-title" data-splitting data-effect1><span>свяжитесь </span><span>с </span><span>нами</span></h2>
 						<div class="title-rombs">
 							<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -880,8 +882,8 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="partners-contacts__address">Курганинск, Краснодарский край</div>
-					<div class="partners-contacts__cards"><a class="partners-contacts__card" href="tel:+78614725800">
+					<div class="partners-contacts__address" data-aos="fade-up">Курганинск, Краснодарский край</div>
+					<div class="partners-contacts__cards" data-aos="fade-up"><a class="partners-contacts__card" href="tel:+78614725800">
 							<div class="partners-contacts__card-icon"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12.9901 2.75C13.8509 2.75 14.2319 2.75076 14.5461 2.77889C18.0394 3.09165 20.808 5.86017 21.1207 9.35348C21.1489 9.66768 21.1496 10.0487 21.1496 10.9095V11.8995C21.1496 12.3137 21.4854 12.6495 21.8996 12.6495C22.3138 12.6495 22.6496 12.3137 22.6496 11.8995V10.8591C22.6496 10.0622 22.6496 9.60934 22.6147 9.21971C22.2373 5.00365 18.896 1.66234 14.6799 1.28486C14.2902 1.24998 13.8374 1.24999 13.0404 1.25H12.0001C11.5859 1.25 11.2501 1.58579 11.2501 2C11.2501 2.41422 11.5859 2.75 12.0001 2.75L12.9901 2.75Z" fill="#F64653"></path>
 									<path d="M7.11183 4.0253C6.05974 3.05857 4.44259 3.05857 3.3905 4.0253C3.34742 4.06489 3.30142 4.11089 3.2417 4.17063L2.34419 5.06813C1.44108 5.97125 1.06196 7.27317 1.33902 8.51995C2.91099 15.5938 8.43553 21.1183 15.5094 22.6903C16.7562 22.9674 18.0581 22.5883 18.9612 21.6851L19.8586 20.7877C19.9184 20.728 19.9644 20.6819 20.004 20.6388C20.9708 19.5867 20.9708 17.9696 20.004 16.9175C19.9644 16.8744 19.9184 16.8284 19.8586 16.7686L18.3894 15.2993C17.3693 14.2792 15.8287 13.9875 14.5063 14.564C13.7492 14.894 12.8672 14.7269 12.2832 14.1429L9.88639 11.7461C9.30239 11.1621 9.13536 10.2802 9.46538 9.52308C10.0418 8.20062 9.75009 6.66009 8.72999 5.63999L7.26066 4.17065C7.20092 4.1109 7.15492 4.06489 7.11183 4.0253Z" fill="#F64653"></path>
@@ -897,7 +899,7 @@
 						</a></div>
 				</section>
 				<section class="partners-fillials container">
-					<div class="partners-fillials__title animation-title" data-splitting data-effect1><span>филиалы</span></div>
+					<div class="partners-fillials__title animation-title" data-splitting data-effect1 data-aos="fade-up"><span>филиалы</span></div>
 					<div class="partners-fillials__cards desktop" data-aos="fade-up">
 						<div class="fillial-card">
 							<div class="fillial-card__title">Краснодар</div>
@@ -1054,15 +1056,12 @@
 						</div>
 					</div>
 					<div class="partners-fillials__cards mobile" data-aos="fade-up">
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Краснодар</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1083,15 +1082,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Крымск</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1112,15 +1108,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">КМВ</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1141,15 +1134,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Ставрополь</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1170,15 +1160,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">ст. Каневская</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1199,15 +1186,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Ростов-на-Дону</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1228,15 +1212,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Джубга</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1257,15 +1238,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Сочи</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1286,15 +1264,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion-container">
+						<div class="accordion-container ac-border">
 							<div class="ac fillial-card">
 								<div class="ac-header ac-trigger">
 									<h3 class="fillial-card__title">Воронеж</h3>
 									<div class="ac-vacancies__btn">
-										<div class="btn-hover_parent">
-											<div class="btn-hover_circle white header_link"></div>
-											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-										</div>
+										<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 									</div>
 								</div>
 								<div class="ac-panel">
@@ -1321,7 +1296,7 @@
 					<div class="partners-requisites__row">
 						<div class="partners-requisites__col left">
 							<div class="partners-requisites__title animation-title" data-splitting data-effect1><span>реквизиты</span></div>
-							<div class="partners-requisites__text">ИП Нефедов Дмитрий Николаевич<br>352430, Россия, Краснодарский край, г. Курганинск, ул.Привокзальная, 1<br>ИНН: 233900481160<br>ОГРН: 305233903100036</div><a class="partners-requisites__card btn-hover_parent" href="./assets/images/requisites.doc" download>
+							<div class="partners-requisites__text desktop">ИП Нефедов Дмитрий Николаевич<br>352430, Россия, Краснодарский край, г. Курганинск, ул.Привокзальная, 1<br>ИНН: 233900481160<br>ОГРН: 305233903100036</div><a class="partners-requisites__card btn-hover_parent" href="./assets/images/requisites.doc" download>
 								<div class="partners-requisites__card-title">Скачать реквизиты</div>
 								<div class="partners-requisites__card-text">Файл PDF</div>
 								<div class="partners-requisites__card-icon">
@@ -1332,13 +1307,14 @@
 									</div>
 								</div>
 							</a>
+							<div class="partners-requisites__text mobile">ИП Нефедов Дмитрий Николаевич<br>352430, Россия, Краснодарский край, г. Курганинск, ул.Привокзальная, 1<br>ИНН: 233900481160<br>ОГРН: 305233903100036</div>
 						</div>
 						<div class="partners-requisites__col right">
 							<div class="partners-requisites__title animation-title" data-splitting data-effect1><span>напишите </span><span>нам</span></div>
 							<form class="partners-requisites__form" data-form="partners">
 								<div class="partners-requisites__form-top">
 									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+										<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 									</div>
 									<div class="input-wrapper" data-input-parent="">
 										<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -1348,8 +1324,8 @@
 									</div>
 								</div>
 								<div class="partners-requisites__form-area">
-									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+									<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+										<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 									</div>
 								</div>
 								<div class="partners-requisites__form-bot">

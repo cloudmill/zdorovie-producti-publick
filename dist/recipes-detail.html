@@ -406,7 +406,7 @@
 							<div class="popup-vacancies__title">Написать нам</div>
 							<form class="popup-vacancies__form" action="" data-form="mail-corp">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 								</div>
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -414,10 +414,10 @@
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">E-mail</div><input class="input" data-input="" required type="email" placeholder="E-mail">
 								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+								<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+									<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 								</div>
-								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp">
+								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp" data-btn-inputs>
 									<div class="btn-hover_circle"></div><span>Отправить</span>
 								</button>
 							</form>
@@ -484,7 +484,7 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="recipes-detail__info">
+					<div class="recipes-detail__info" data-aos="fade-up">
 						<div class="recipes-detail__time">
 							<div class="recipes-detail__time-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25" fill="none">
 									<path d="M6.46852 2.33568C6.79197 2.07692 6.84441 1.60495 6.58565 1.28151C6.32689 0.95806 5.85493 0.905619 5.53148 1.16438L3.03148 3.16438C2.70803 3.42313 2.65559 3.8951 2.91435 4.21855C3.17311 4.542 3.64507 4.59444 3.96852 4.33568L6.46852 2.33568Z" fill="#4F627D"></path>
@@ -498,7 +498,7 @@
 							<div class="recipes-detail__date recipes-detail__plug white">23 февраля</div>
 						</div>
 					</div>
-					<div class="recipes-detail__content">
+					<div class="recipes-detail__content" data-aos="fade-up">
 						<div class="recipes-detail__gallery">
 							<div class="recipes-detail__gallery-left">
 								<div class="swiper gallery-thumbs">
@@ -559,7 +559,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="recipes-detail__container">
+						<div class="recipes-detail__container" data-aos="fade-up">
 							<p>Вам не раз приходилось следить за тем, чтобы меньше значит больше - в конце концов, вы все слышали это высказывание, которое можно применить во многих местах. В этом рецепте нам понадобится всего несколько ингредиентов, а вкус действительно отличный. Вы можете выбирать между куриными и птичьими сердечками, и вы не будете разочарованы.</p>
 							<h3>Ингредиенты</h3>
 							<ul>
@@ -587,7 +587,7 @@
 						</div>
 					</div>
 					<div class="recipes-detail__simillar" data-aos="fade-up">
-						<div class="recipes-detail__simillar-top">
+						<div class="recipes-detail__simillar-top" data-aos="fade-up">
 							<h2 class="recipes-detail__simillar-title animation-title" data-splitting data-effect1><span>похожие </span><span>рецепты</span></h2>
 							<div class="title-rombs">
 								<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">

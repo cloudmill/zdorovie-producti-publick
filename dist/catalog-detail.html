@@ -406,7 +406,7 @@
 							<div class="popup-vacancies__title">Написать нам</div>
 							<form class="popup-vacancies__form" action="" data-form="mail-corp">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 								</div>
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -414,10 +414,10 @@
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">E-mail</div><input class="input" data-input="" required type="email" placeholder="E-mail">
 								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+								<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+									<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 								</div>
-								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp">
+								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp" data-btn-inputs>
 									<div class="btn-hover_circle"></div><span>Отправить</span>
 								</button>
 							</form>
@@ -614,15 +614,12 @@
 								</div>
 							</div>
 							<div class="catalog-detail__accordeons" data-aos="fade-up">
-								<div class="accordion-container">
+								<div class="accordion-container ac-border">
 									<div class="ac ac-vacancies ac-catalog">
 										<div class="ac-header ac-vacancies__top ac-trigger">
 											<h3 class="ac-vacancies__title">фасовка</h3>
 											<div class="ac-vacancies__btn">
-												<div class="btn-hover_parent">
-													<div class="btn-hover_circle white header_link"></div>
-													<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-												</div>
+												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 											</div>
 										</div>
 										<div class="ac-panel ac-catalog__bot">
@@ -690,15 +687,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="accordion-container">
+								<div class="accordion-container ac-border">
 									<div class="ac ac-vacancies ac-catalog">
 										<div class="ac-header ac-vacancies__top ac-trigger">
 											<h3 class="ac-vacancies__title">условия хранения</h3>
 											<div class="ac-vacancies__btn">
-												<div class="btn-hover_parent">
-													<div class="btn-hover_circle white header_link"></div>
-													<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-												</div>
+												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 											</div>
 										</div>
 										<div class="ac-panel ac-catalog__bot">
@@ -715,15 +709,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="accordion-container">
+								<div class="accordion-container ac-border">
 									<div class="ac ac-vacancies ac-catalog">
 										<div class="ac-header ac-vacancies__top ac-trigger">
 											<h3 class="ac-vacancies__title">состав</h3>
 											<div class="ac-vacancies__btn">
-												<div class="btn-hover_parent">
-													<div class="btn-hover_circle white header_link"></div>
-													<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-												</div>
+												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 											</div>
 										</div>
 										<div class="ac-panel ac-catalog__bot">
@@ -731,15 +722,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="accordion-container">
+								<div class="accordion-container ac-border">
 									<div class="ac ac-vacancies ac-catalog last">
 										<div class="ac-header ac-vacancies__top ac-trigger">
 											<h3 class="ac-vacancies__title">пищевая ценность</h3>
 											<div class="ac-vacancies__btn">
-												<div class="btn-hover_parent">
-													<div class="btn-hover_circle white header_link"></div>
-													<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-												</div>
+												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 											</div>
 										</div>
 										<div class="ac-panel ac-catalog__bot">
@@ -771,7 +759,7 @@
 									<form class="partners-requisites__form" data-form="catalog-detail">
 										<div class="partners-requisites__form-top">
 											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+												<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 											</div>
 											<div class="input-wrapper" data-input-parent="">
 												<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -781,8 +769,8 @@
 											</div>
 										</div>
 										<div class="partners-requisites__form-area">
-											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+											<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+												<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 											</div>
 										</div>
 										<div class="partners-requisites__form-bot">

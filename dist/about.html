@@ -406,7 +406,7 @@
 							<div class="popup-vacancies__title">Написать нам</div>
 							<form class="popup-vacancies__form" action="" data-form="mail-corp">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required placeholder="Имя">
+									<div class="input-wrapper__placeholder">Имя</div><input class="input" data-input="" required data-mask-text="" data-parsley-pattern="^[А-Яа-яЁёs]+$" placeholder="Имя">
 								</div>
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">Телефон</div><input class="input" data-input="" required type="tel" placeholder="Телефон" data-mask-phone="">
@@ -414,10 +414,10 @@
 								<div class="input-wrapper" data-input-parent="">
 									<div class="input-wrapper__placeholder">E-mail</div><input class="input" data-input="" required type="email" placeholder="E-mail">
 								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение" required></textarea>
+								<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
+									<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" maxlength="225" type="text" placeholder="Сообщение"></textarea>
 								</div>
-								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp">
+								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="mail-corp" data-btn-inputs>
 									<div class="btn-hover_circle"></div><span>Отправить</span>
 								</button>
 							</form>
@@ -530,7 +530,7 @@
 						</div>
 					</div>
 				</div>
-				<section class="about-video">
+				<section class="about-video section-animation">
 					<div class="main-traditions__bg about__bg"><svg width="1920" height="1390" viewbox="0 0 1920 1390" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_112_14072)">
 								<path d="M852.866 1631.13C893.576 1133.75 1140.32 88.0227 2485.18 0.229725C2579.7 -5.78834 2629.96 107.847 2562.7 175.108L1027.74 1710.42C959.773 1778.75 845.078 1726.35 852.866 1631.13Z" fill="#EAF3FF"></path>
@@ -601,11 +601,11 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-achievements container" data-aos="fade-up">
+				<section class="about-achievements container section-animation" data-aos="fade-up">
 					<div class="about-achievements__top" data-aos="fade-up">
 						<h3 class="about-achievements__title">Под собственной торговой маркой<br>«Здоровые Продукты» изготавливаем мороженое и замороженные полуфабрикаты</h3>
 					</div>
-					<div class="about-achievements__top">
+					<div class="about-achievements__top" data-aos="fade-up">
 						<div class="about-achievements__rect"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="5" viewbox="0 0 15 5" fill="none">
 								<path d="M0.747802 1.88978C6.60242 8.56522 16.9908 2.06708 14.3345 0.480706C14.1161 0.350829 13.8615 0.292427 13.6079 0.291602C11.7984 0.290437 1.39299 0.281112 1.39299 0.281112C0.552317 0.280887 0.137515 1.30782 0.747802 1.88978Z" fill="#F64653"></path>
 							</svg></div>
@@ -714,7 +714,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-production" data-aos="fade-up">
+				<section class="about-production section-animation" data-aos="fade-up">
 					<div class="container">
 						<div class="about-production__top">
 							<h2 class="about-production__title animation-title" data-splitting data-effect1><span>производство</span></h2>
@@ -799,13 +799,13 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-evaluate" data-aos="fade-up">
+				<section class="about-evaluate section-animation" data-aos="fade-up">
 					<div class="container">
-						<div class="about-evaluate__top">
+						<div class="about-evaluate__top" data-aos="fade-up">
 							<h3 class="about-evaluate__title">Нас по достоинству оценивают эксперты рынка</h3>
 						</div>
 					</div>
-					<div class="about-evaluate__listing">
+					<div class="about-evaluate__listing" data-aos="fade-up">
 						<div class="about-evaluate__item">
 							<div class="about-evaluate__item-img">
 								<picture class="picture">
@@ -836,8 +836,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-support container" data-aos="fade-up">
-					<div class="about-support__top">
+				<section class="about-support container section-animation" data-aos="fade-up">
+					<div class="about-support__top" data-aos="fade-up">
 						<h2 class="about-support__title animation-title" data-splitting data-effect1><span>поддерживаем </span><span>партнерскую </span><span>сеть</span></h2>
 						<div class="title-rombs">
 							<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -854,24 +854,26 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="about-support__content">
-						<div class="about-support__rect">
+					<div class="about-support__content" data-aos="fade-up">
+						<div class="about-support__rect" data-aos="fade-up">
 							<div class="about-support__rect-bg">
 								<picture class="picture">
 									<source type="image/webp" srcset="assets/images/about-rect-bg-blue.webp"><img class="picture__img" src="assets/images/about-rect-bg-blue.png">
 								</picture>
 							</div>
-							<div class="about-support__rect-title">более 20 000 клиентов, которым мы предоставляем разнообразное фирменное морозильное оборудование, зонты, антивандальное оборудование, рекламные материалы</div>
-							<div class="about-support__rect-btn about-support__btn btn-hover_parent" data-popup="tech-char">
-								<div class="btn-hover_circle white"></div>
-								<div class="about-support__btn-text">Технические характеристики оборудования</div>
-								<div class="about-support__btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30" fill="none">
-										<path d="M22.5 15H7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M15 22.5V7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg></div>
+							<div class="about-support__rect-box">
+								<div class="about-support__rect-title">более 20 000 клиентов, которым мы предоставляем разнообразное фирменное морозильное оборудование, зонты, антивандальное оборудование, рекламные материалы</div>
+								<div class="about-support__rect-btn about-support__btn btn-hover_parent" data-popup="tech-char">
+									<div class="btn-hover_circle white"></div>
+									<div class="about-support__btn-text">Технические характеристики оборудования</div>
+									<div class="about-support__btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30" fill="none">
+											<path d="M22.5 15H7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M15 22.5V7.5" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
 							</div>
 						</div>
-						<div class="about-support__slider">
+						<div class="about-support__slider" data-aos="fade-up">
 							<div class="swiper swiper-freezing">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -967,8 +969,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-social container" data-aos="fade-up">
-					<div class="about-social__top">
+				<section class="about-social container section-animation" data-aos="fade-up">
+					<div class="about-social__top" data-aos="fade-up">
 						<h2 class="about-social__title animation-title" data-splitting data-effect1><span>социальные </span><span>проекты</span></h2>
 						<div class="title-rombs">
 							<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -985,7 +987,7 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="about-social__content">
+					<div class="about-social__content" data-aos="fade-up">
 						<div class="about-social__card blue">
 							<div class="about-social__card-inner">
 								<div class="about-social__card-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="90" viewbox="0 0 121 90" fill="none">
@@ -1025,8 +1027,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="about-history container" data-aos="fade-up">
-					<div class="about-history__top">
+				<section class="about-history container section-animation" data-aos="fade-up">
+					<div class="about-history__top" data-aos="fade-up">
 						<h2 class="about-history__title animation-title" data-splitting data-effect1><span>ценим </span><span>историю</span></h2>
 						<div class="title-rombs">
 							<div class="title-rombs__item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
@@ -1043,7 +1045,7 @@
 								</svg></div>
 						</div>
 					</div>
-					<div class="about-history__content">
+					<div class="about-history__content" data-aos="fade-up">
 						<div class="about-history__col">
 							<div class="about-history__img-slider">
 								<div class="swiper history-img-swiper">
