@@ -442,16 +442,30 @@
 					</div>
 				</div>
 				<div class="header-search" data-overlay-on data-header-component="search">
-					<div class="header-search__inner">
+					<form class="header-search__inner">
 						<div class="header-search__input">
-							<div class="input-wrapper" data-input-parent=""><input class="input" data-input="" required data-input-search placeholder="Что вы хотите найти?"><svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+							<div class="input-wrapper" data-input-parent=""><input class="input" data-input="" required data-input-search="header" placeholder="Что вы хотите найти?"><svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 									<path d="M6.69678 6.6967L17.3034 17.3033" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 									<path d="M6.69662 17.3033L17.3032 6.6967" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></div>
-						</div>
-						<div class="header-search__btn btn-hover_parent">
+						</div><button class="header-search__btn btn-hover_parent" type="submit">
 							<div class="btn-hover_circle"></div><span>Найти</span>
+						</button>
+					</form>
+				</div>
+				<div class="popup-video" data-popup-fade="recipec-video">
+					<div class="popup-video__close" data-fade-close="main-video">
+						<div class="btn-hover_parent">
+							<div class="btn-hover_circle white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+								<path d="M6.69678 6.69671L17.3034 17.3033" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
 						</div>
+					</div>
+					<div class="popup-video__inner">
+						<div class="popup-video__video"><video class="zp-video" controls="controls" width="100%" height="100%" poster="./assets/images/about-production-popup-icecream.png" preload="none">
+								<source src="./assets/videos/video-zdor-product.mp4">
+							</video></div>
 					</div>
 				</div>
 				<section class="catalog-detail top-section container">
@@ -508,7 +522,7 @@
 								</div>
 								<div class="recipes-detail__gallery-right">
 									<div class="recipes-detail__gallery-btns">
-										<div class="slider-btn btn-hover_parent recipes-detail__gallery-left">
+										<div class="slider-btn btn-hover_parent recipes-detail__gallery-left-btn">
 											<div class="white-circle">
 												<div class="btn-hover_circle total-white"></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
 													<path d="M16 10.8698L16 8.75515C16 6.47309 13.3808 5.18399 11.5725 6.57603L7.85123 9.44068C6.42121 10.5415 6.42121 12.6981 7.85124 13.7989L11.5725 16.6636C13.3808 18.0556 16 16.7665 16 14.4844L16 12.3698L16 10.8698Z" fill="#4F627D"></path>
@@ -591,7 +605,7 @@
 										</div>
 									</a></div>
 								<div class="catalog-detail__thumbs-row">
-									<div class="catalog-hero__recomendations details"><a class="catalog-hero__rec blue btn-hover_parent" href="#" download>
+									<div class="catalog-hero__recomendations details"><a class="catalog-hero__rec blue btn-hover_parent" href="./assets/images/fabricat.pdf" download>
 											<div class="catalog-hero__rec-title">Рекомендации по выпеканию</div>
 											<div class="catalog-hero__rec-text">Файл PDF</div>
 											<div class="catalog-hero__rec-circle">
@@ -602,7 +616,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="catalog-hero__rec white btn-hover_parent" data-button-fade="main-video">
+										<div class="catalog-hero__rec white btn-hover_parent" data-button-fade="recipec-video">
 											<div class="catalog-hero__rec-title">Рекомендации по выпеканию</div>
 											<div class="catalog-hero__rec-text">Видео</div>
 											<div class="catalog-hero__rec-circle">
@@ -616,141 +630,133 @@
 									</div>
 								</div>
 							</div>
-							<div class="catalog-detail__accordeons" data-aos="fade-up">
-								<div class="accordion-container ac-border">
-									<div class="ac ac-vacancies ac-catalog">
-										<div class="ac-header ac-vacancies__top ac-trigger">
-											<h3 class="ac-vacancies__title">фасовка</h3>
-											<div class="ac-vacancies__btn">
-												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-											</div>
+							<div class="catalog-detail__accordeons accordion-container" data-aos="fade-up">
+								<div class="ac ac-vacancies ac-catalog">
+									<div class="ac-header ac-vacancies__top ac-trigger">
+										<h3 class="ac-vacancies__title">фасовка</h3>
+										<div class="ac-vacancies__btn">
+											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 										</div>
-										<div class="ac-panel ac-catalog__bot">
-											<div class="ac-catalog__links">
-												<div class="ac-catalog__links-item active">Индивидуальная упаковка</div>
-												<div class="ac-catalog__links-item">Весовое</div>
-											</div>
-											<div class="ac-catalog__chars">
-												<div class="catalog-card__plugs">
-													<div class="catalog-card__plug">
-														<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<path d="M4.58505 10.9704C5.00547 9.17667 5.21568 8.27978 5.71035 7.61412C6.12854 7.0514 6.68728 6.60847 7.33058 6.32973C8.09156 6 9.01275 6 10.8551 6H13.1449C14.9872 6 15.9084 6 16.6694 6.32973C17.3127 6.60847 17.8715 7.0514 18.2896 7.61412C18.7843 8.27978 18.9945 9.17667 19.4149 10.9704L20.1462 14.0905C20.7859 16.8199 21.1058 18.1846 20.7522 19.2548C20.4553 20.1533 19.8496 20.9175 19.0425 21.4115C18.0812 22 16.6795 22 13.8761 22H10.1239C7.32049 22 5.91879 22 4.9575 21.4115C4.15044 20.9175 3.54466 20.1533 3.24781 19.2548C2.89423 18.1846 3.21409 16.8199 3.8538 14.0904L4.58505 10.9704Z" fill="#0068FF"></path>
-																<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.5C12.8284 6.5 13.5 5.82843 13.5 5C13.5 4.17157 12.8284 3.5 12 3.5C11.1716 3.5 10.5 4.17157 10.5 5C10.5 5.82843 11.1716 6.5 12 6.5ZM12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z" fill="#0068FF"></path>
-															</svg></div>
-														<div class="catalog-card__plug-text">90 г</div>
-														<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
-																<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
-																<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
-															</svg></div>
-													</div>
-													<div class="catalog-card__plug">
-														<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<path d="M9.92963 2.48L4.58963 5.45003C3.37963 6.12003 2.38965 7.80001 2.38965 9.18001V14.83C2.38965 16.21 3.37963 17.89 4.58963 18.56L9.92963 21.53C11.0696 22.16 12.9396 22.16 14.0796 21.53L19.4196 18.56C20.6296 17.89 21.6196 16.21 21.6196 14.83V9.18001C21.6196 7.80001 20.6296 6.12003 19.4196 5.45003L14.0796 2.48C12.9296 1.84 11.0696 1.84 9.92963 2.48Z" fill="#0068FF"></path>
-																<path d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M12 21.61V12.54" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M16.9998 13.2401V9.58014L7.50977 4.1001" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg></div>
-														<div class="catalog-card__plug-text">28 шт</div>
-														<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
-																<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
-																<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
-															</svg></div>
-													</div>
-													<div class="catalog-card__plug">
-														<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<g clip-path="url(#clip0_758_8108)">
-																	<path d="M2.99999 18.9995C2.446 18.9995 2 19.4455 2 19.9995V21.9995C2 22.5535 2.446 22.9995 2.99999 22.9995H4.99997C5.55397 22.9995 5.99996 22.5535 5.99996 21.9995V20.9995H9.99993V21.9995C9.99993 22.5535 10.4459 22.9995 10.9999 22.9995H12.9999C13.5539 22.9995 13.9999 22.5535 13.9999 21.9995V20.9995H17.9999V21.9995C17.9999 22.5535 18.4459 22.9995 18.9998 22.9995H20.9998C21.5538 22.9995 21.9998 22.5535 21.9998 21.9995V19.9995C21.9998 19.4455 21.5538 18.9995 20.9998 18.9995H2.99999Z" fill="#0068FF"></path>
-																	<rect x="3.00098" y="10" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
-																	<path d="M6.5 13C6.5 13.2761 6.72386 13.5 7 13.5C7.27614 13.5 7.5 13.2761 7.5 13H6.5ZM6.5 10V13H7.5V10H6.5Z" fill="#EAF3FF"></path>
-																	<rect x="13" y="10" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
-																	<path d="M16.5 13C16.5 13.2761 16.7239 13.5 17 13.5C17.2761 13.5 17.5 13.2761 17.5 13H16.5ZM16.5 10V13H17.5V10H16.5Z" fill="#EAF3FF"></path>
-																	<rect x="8" y="1" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
-																	<path d="M11.5 3.99997C11.5 4.27612 11.7239 4.49997 12 4.49997C12.2761 4.49997 12.5 4.27612 12.5 3.99997H11.5ZM11.5 1V3.99997H12.5V1H11.5Z" fill="#EAF3FF"></path>
-																</g>
-																<defs>
-																	<clippath id="clip0_758_8108">
-																		<rect width="24" height="24" fill="white"></rect>
-																	</clippath>
-																</defs>
-															</svg></div>
-														<div class="catalog-card__plug-text">50 шт</div>
-														<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
-																<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
-																<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
-																<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
-															</svg></div>
-													</div>
+									</div>
+									<div class="ac-panel ac-catalog__bot">
+										<div class="ac-catalog__links">
+											<div class="ac-catalog__links-item active">Индивидуальная упаковка</div>
+											<div class="ac-catalog__links-item">Весовое</div>
+										</div>
+										<div class="ac-catalog__chars">
+											<div class="catalog-card__plugs">
+												<div class="catalog-card__plug">
+													<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<path d="M4.58505 10.9704C5.00547 9.17667 5.21568 8.27978 5.71035 7.61412C6.12854 7.0514 6.68728 6.60847 7.33058 6.32973C8.09156 6 9.01275 6 10.8551 6H13.1449C14.9872 6 15.9084 6 16.6694 6.32973C17.3127 6.60847 17.8715 7.0514 18.2896 7.61412C18.7843 8.27978 18.9945 9.17667 19.4149 10.9704L20.1462 14.0905C20.7859 16.8199 21.1058 18.1846 20.7522 19.2548C20.4553 20.1533 19.8496 20.9175 19.0425 21.4115C18.0812 22 16.6795 22 13.8761 22H10.1239C7.32049 22 5.91879 22 4.9575 21.4115C4.15044 20.9175 3.54466 20.1533 3.24781 19.2548C2.89423 18.1846 3.21409 16.8199 3.8538 14.0904L4.58505 10.9704Z" fill="#0068FF"></path>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.5C12.8284 6.5 13.5 5.82843 13.5 5C13.5 4.17157 12.8284 3.5 12 3.5C11.1716 3.5 10.5 4.17157 10.5 5C10.5 5.82843 11.1716 6.5 12 6.5ZM12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z" fill="#0068FF"></path>
+														</svg></div>
+													<div class="catalog-card__plug-text">90 г</div>
+													<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
+															<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
+															<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
+														</svg></div>
+												</div>
+												<div class="catalog-card__plug">
+													<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<path d="M9.92963 2.48L4.58963 5.45003C3.37963 6.12003 2.38965 7.80001 2.38965 9.18001V14.83C2.38965 16.21 3.37963 17.89 4.58963 18.56L9.92963 21.53C11.0696 22.16 12.9396 22.16 14.0796 21.53L19.4196 18.56C20.6296 17.89 21.6196 16.21 21.6196 14.83V9.18001C21.6196 7.80001 20.6296 6.12003 19.4196 5.45003L14.0796 2.48C12.9296 1.84 11.0696 1.84 9.92963 2.48Z" fill="#0068FF"></path>
+															<path d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 21.61V12.54" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M16.9998 13.2401V9.58014L7.50977 4.1001" stroke="#EAF3FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></div>
+													<div class="catalog-card__plug-text">28 шт</div>
+													<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
+															<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
+															<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
+														</svg></div>
+												</div>
+												<div class="catalog-card__plug">
+													<div class="catalog-card__plug-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<g clip-path="url(#clip0_758_8108)">
+																<path d="M2.99999 18.9995C2.446 18.9995 2 19.4455 2 19.9995V21.9995C2 22.5535 2.446 22.9995 2.99999 22.9995H4.99997C5.55397 22.9995 5.99996 22.5535 5.99996 21.9995V20.9995H9.99993V21.9995C9.99993 22.5535 10.4459 22.9995 10.9999 22.9995H12.9999C13.5539 22.9995 13.9999 22.5535 13.9999 21.9995V20.9995H17.9999V21.9995C17.9999 22.5535 18.4459 22.9995 18.9998 22.9995H20.9998C21.5538 22.9995 21.9998 22.5535 21.9998 21.9995V19.9995C21.9998 19.4455 21.5538 18.9995 20.9998 18.9995H2.99999Z" fill="#0068FF"></path>
+																<rect x="3.00098" y="10" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
+																<path d="M6.5 13C6.5 13.2761 6.72386 13.5 7 13.5C7.27614 13.5 7.5 13.2761 7.5 13H6.5ZM6.5 10V13H7.5V10H6.5Z" fill="#EAF3FF"></path>
+																<rect x="13" y="10" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
+																<path d="M16.5 13C16.5 13.2761 16.7239 13.5 17 13.5C17.2761 13.5 17.5 13.2761 17.5 13H16.5ZM16.5 10V13H17.5V10H16.5Z" fill="#EAF3FF"></path>
+																<rect x="8" y="1" width="7.99993" height="7.99993" rx="1" fill="#0068FF"></rect>
+																<path d="M11.5 3.99997C11.5 4.27612 11.7239 4.49997 12 4.49997C12.2761 4.49997 12.5 4.27612 12.5 3.99997H11.5ZM11.5 1V3.99997H12.5V1H11.5Z" fill="#EAF3FF"></path>
+															</g>
+															<defs>
+																<clippath id="clip0_758_8108">
+																	<rect width="24" height="24" fill="white"></rect>
+																</clippath>
+															</defs>
+														</svg></div>
+													<div class="catalog-card__plug-text">50 шт</div>
+													<div class="catalog-card__plug-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" fill="white"></rect>
+															<path d="M12.75 11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11Z" fill="#0068FF"></path>
+															<path d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z" fill="#0068FF"></path>
+															<rect x="0.5" y="0.5" width="23" height="23" rx="5.5" stroke="#CEDFF5"></rect>
+														</svg></div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="accordion-container ac-border">
-									<div class="ac ac-vacancies ac-catalog">
-										<div class="ac-header ac-vacancies__top ac-trigger">
-											<h3 class="ac-vacancies__title">условия хранения</h3>
-											<div class="ac-vacancies__btn">
-												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-											</div>
+								<div class="ac ac-vacancies ac-catalog">
+									<div class="ac-header ac-vacancies__top ac-trigger">
+										<h3 class="ac-vacancies__title">условия хранения</h3>
+										<div class="ac-vacancies__btn">
+											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 										</div>
-										<div class="ac-panel ac-catalog__bot">
-											<div class="ac-catalog__save">
-												<div class="ac-catalog__save-item">
-													<div class="ac-catalog__save-title">Срок годности</div>
-													<div class="ac-catalog__save-text">120 суток</div>
-												</div>
-												<div class="ac-catalog__save-item">
-													<div class="ac-catalog__save-title">Температура не выше</div>
-													<div class="ac-catalog__save-text">-18 °C</div>
-												</div>
+									</div>
+									<div class="ac-panel ac-catalog__bot">
+										<div class="ac-catalog__save">
+											<div class="ac-catalog__save-item">
+												<div class="ac-catalog__save-title">Срок годности</div>
+												<div class="ac-catalog__save-text">120 суток</div>
+											</div>
+											<div class="ac-catalog__save-item">
+												<div class="ac-catalog__save-title">Температура не выше</div>
+												<div class="ac-catalog__save-text">-18 °C</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="accordion-container ac-border">
-									<div class="ac ac-vacancies ac-catalog">
-										<div class="ac-header ac-vacancies__top ac-trigger">
-											<h3 class="ac-vacancies__title">состав</h3>
-											<div class="ac-vacancies__btn">
-												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-											</div>
-										</div>
-										<div class="ac-panel ac-catalog__bot">
-											<div class="ac-catalog__text">Вода питьевая, сливки пастеризованные, молоко цельное сгущенное с сахаром, сахар, вафельный стаканчик, сухое цельное молоко, глазурь «Шоколадная» с растительным жиром, сливочное масло, ядра арахиса обжаренные (дробленые), сухое обезжиренное молоко, патока, комплексная пищевая добавка, ароматизатор ванилин.<br>Массовая доля жира 12 %.</div>
+								<div class="ac ac-vacancies ac-catalog">
+									<div class="ac-header ac-vacancies__top ac-trigger">
+										<h3 class="ac-vacancies__title">состав</h3>
+										<div class="ac-vacancies__btn">
+											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 										</div>
 									</div>
+									<div class="ac-panel ac-catalog__bot">
+										<div class="ac-catalog__text">Вода питьевая, сливки пастеризованные, молоко цельное сгущенное с сахаром, сахар, вафельный стаканчик, сухое цельное молоко, глазурь «Шоколадная» с растительным жиром, сливочное масло, ядра арахиса обжаренные (дробленые), сухое обезжиренное молоко, патока, комплексная пищевая добавка, ароматизатор ванилин.<br>Массовая доля жира 12 %.</div>
+									</div>
 								</div>
-								<div class="accordion-container ac-border">
-									<div class="ac ac-vacancies ac-catalog last">
-										<div class="ac-header ac-vacancies__top ac-trigger">
-											<h3 class="ac-vacancies__title">пищевая ценность</h3>
-											<div class="ac-vacancies__btn">
-												<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
-											</div>
+								<div class="ac ac-vacancies ac-catalog">
+									<div class="ac-header ac-vacancies__top ac-trigger">
+										<h3 class="ac-vacancies__title">пищевая ценность</h3>
+										<div class="ac-vacancies__btn">
+											<div class="ac-vacancies__btn-plus"><span></span><span></span></div>
 										</div>
-										<div class="ac-panel ac-catalog__bot">
-											<div class="ac-catalog__goods">
-												<div class="ac-catalog__goods-item">
-													<div class="ac-catalog__goods-title">Белки</div>
-													<div class="ac-catalog__goods-text">4,5 г</div>
-												</div>
-												<div class="ac-catalog__goods-item">
-													<div class="ac-catalog__goods-title">Жиры</div>
-													<div class="ac-catalog__goods-text">16,5 г</div>
-												</div>
-												<div class="ac-catalog__goods-item">
-													<div class="ac-catalog__goods-title">Углеводы</div>
-													<div class="ac-catalog__goods-text">24,5 г</div>
-												</div>
-												<div class="ac-catalog__goods-item">
-													<div class="ac-catalog__goods-title">Энергетическая ценность</div>
-													<div class="ac-catalog__goods-text">1100 кДж/ 264 ккал</div>
-												</div>
+									</div>
+									<div class="ac-panel ac-catalog__bot">
+										<div class="ac-catalog__goods">
+											<div class="ac-catalog__goods-item">
+												<div class="ac-catalog__goods-title">Белки</div>
+												<div class="ac-catalog__goods-text">4,5 г</div>
+											</div>
+											<div class="ac-catalog__goods-item">
+												<div class="ac-catalog__goods-title">Жиры</div>
+												<div class="ac-catalog__goods-text">16,5 г</div>
+											</div>
+											<div class="ac-catalog__goods-item">
+												<div class="ac-catalog__goods-title">Углеводы</div>
+												<div class="ac-catalog__goods-text">24,5 г</div>
+											</div>
+											<div class="ac-catalog__goods-item">
+												<div class="ac-catalog__goods-title">Энергетическая ценность</div>
+												<div class="ac-catalog__goods-text">1100 кДж/ 264 ккал</div>
 											</div>
 										</div>
 									</div>
@@ -773,7 +779,7 @@
 										</div>
 										<div class="partners-requisites__form-area">
 											<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
-												<div class="input-wrapper__placeholder placeholder_background">Сообщение</div><textarea class="textarea" data-input="" type="text" placeholder="Сообщение"></textarea>
+												<div class="input-wrapper__placeholder placeholder_background">Комментраий к заявке</div><textarea class="textarea" data-input="" type="text" placeholder="Комментраий к заявке"></textarea>
 											</div>
 										</div>
 										<div class="partners-requisites__form-bot">
