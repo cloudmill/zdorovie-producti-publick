@@ -699,15 +699,23 @@
 								<div class="input-wrapper input-wrapper_textarea" data-input-parent="">
 									<div class="input-wrapper__placeholder placeholder_background">Текст сопроводительного письма</div><textarea class="textarea" data-input="" type="text" placeholder="Текст сопроводительного письма"></textarea>
 								</div>
-								<lable class="popup-vacancies__form-label btn-hover_parent" for="file">
+								<div class="popup-vacancies__form-files" data-files-wrapper>
+									<div class="popup-vacancies__file">
+										<div class="popup-vacancies__file-close" data-file-delete><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+												<path d="M6.69678 6.69671L17.3034 17.3033" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M6.69662 17.3033L17.3032 6.69671" stroke="#0068FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></div>
+										<p class="popup-vacancies__file-text"></p>
+									</div>
+								</div><label class="popup-vacancies__form-label btn-hover_parent" for="file">
 									<div class="btn-hover_circle white"></div>
 									<div class="popup-vacancies__form-icon"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M8 6.25C4.82436 6.25 2.25 8.82436 2.25 12C2.25 15.1756 4.82436 17.75 8 17.75C8.41421 17.75 8.75 17.4142 8.75 17C8.75 16.5858 8.41421 16.25 8 16.25C5.65279 16.25 3.75 14.3472 3.75 12C3.75 9.65279 5.65279 7.75 8 7.75C8.41421 7.75 8.75 7.41421 8.75 7C8.75 6.58579 8.41421 6.25 8 6.25Z" fill="#0068FF"></path>
 											<path d="M16 6.25C15.5858 6.25 15.25 6.58579 15.25 7C15.25 7.41421 15.5858 7.75 16 7.75C18.3472 7.75 20.25 9.65279 20.25 12C20.25 14.3472 18.3472 16.25 16 16.25C15.5858 16.25 15.25 16.5858 15.25 17C15.25 17.4142 15.5858 17.75 16 17.75C19.1756 17.75 21.75 15.1756 21.75 12C21.75 8.82436 19.1756 6.25 16 6.25Z" fill="#0068FF"></path>
 											<path d="M8 11.25C7.58579 11.25 7.25 11.5858 7.25 12C7.25 12.4142 7.58579 12.75 8 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H8Z" fill="#0068FF"></path>
 										</svg></div>
-									<div class="popup-vacancies__form-text">Прикрепить файл</div><input class="popup-vacancies__form-file" type="file" name="file" id="file">
-								</lable>
+									<div class="popup-vacancies__form-text">Прикрепить файл</div><input class="popup-vacancies__form-file" type="file" name="file" id="file" data-form-file>
+								</label>
 								<p class="popup-vacancies__form-policy">Нажимая на кнопку «Отправить», вы даете согласие с&nbsp;<a href="#">политикой в отношении обработки персональных данных</a></p><button class="popup-vacancies__form-button btn-hover_parent" type="submit" data-form-button="vacancies">
 									<div class="btn-hover_circle"></div><span>Отправить</span>
 								</button>
